@@ -1,0 +1,93 @@
+ 
+body{
+  margin:0;
+  padding: 0;
+  overflow: hidden;
+}
+.gameover{
+    position: relative;
+    top: 60px;
+    font-size: 30px;
+    text-align:center;
+    /* visibility: hidden; */
+}
+#scorec{
+    position: absolute;
+    top: 13px;
+    right: 28px;
+     width: 166px;
+     border:1px solid black;
+     font-size: 30px;
+     background-color: rgb(40, 61, 54);
+     opacity:0.7;
+}
+.container{
+    background-color: rgb(172, 148, 148);
+    background-image:url(sky.png);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    width: 100%;
+    height: 100vh;
+    animation: back 3s linear infinite;
+}
+@keyframes back{
+    0%{
+        left:0px;
+    
+    }
+    50%{
+        left:600px;
+    }
+}
+.dino{
+    background-image: url(dragon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom:0;
+    left:52px;
+    position: absolute;
+    height:130px;
+    width:140px;
+}
+.obstacle{
+    background-image: url(dino.png);
+    background-repeat:no-repeat ;
+    background-size: cover;
+    height:130px;
+    width:107px;
+    position: absolute;
+    bottom:0;
+    left:44vw;
+
+}
+.obani{
+    animation: obani 4s linear infinite;
+}
+.animatedino{
+    animation: dino 0.7s linear;
+
+}
+@keyframes dino{
+  0%{
+      bottom:0;
+  }
+
+  50%{
+      bottom:300px;
+  }
+  100%{
+      bottom:0;
+      
+  }
+}
+
+@keyframes obani{
+    0%{
+
+        left:100vw;
+    }
+100%{
+    left:-44vw;
+
+   }
+}
